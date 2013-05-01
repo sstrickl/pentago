@@ -34,7 +34,6 @@ class Pentago
 				puts "       ~A~              ~B~"
 				print"      "
 			end
-
 			if r == 3
 				print "     "
 			end
@@ -89,7 +88,6 @@ class Pentago
 	
 	# each time player turn is called, the opposing player is set as current player.
 	def player_Turn
-
 		if @p_turn == "2"
 			@p_turn = "1"
 
@@ -108,8 +106,6 @@ class Pentago
 		@board[x][y] = @p_turn
 
 		self.printBoards
-
-		# should print the boards then prompt user to choose a board and direction to turn. 
 		# should write something so that 1 board must be turned before next player can go. 
 	end
 
@@ -128,8 +124,8 @@ class Pentago
 				end
 		end
 
-		#print "winArray2 = #{winArray2} winArray1 = #{winArray1}"
-
+	
+		# if win array is less than or = to 4, reset winArray to nothing bc it is not a winner.
 			if (winArray1.length <= 4) 
 				winArray1 = []
 			end
@@ -312,15 +308,15 @@ class Pentago
 					end
 				end
 			
-			print "winArray1 = #{winArray1} winArray2 = #{winArray2}"	 
+			# print "winArray1 = #{winArray1} winArray2 = #{winArray2}"	 
 	end
 
 	# turn board A either left or right
 	def turn_board_A(direction) 
 		# the coordinates which board A overlaps with in @board are indicated in matrix newBoard_A
 		newBoard_A = [["0,0","0,1","0,2"],
-					  ["1,0","1,1","1,2"],
-					  ["2,0","2,1","2,2"]]
+			      ["1,0","1,1","1,2"],
+			      ["2,0","2,1","2,2"]]
 
 		# turn right board A right
 		if direction == "right"
@@ -363,8 +359,8 @@ class Pentago
 	def turn_board_B(direction)
 		# the coordinates which board B overlaps with in @board are indicated in matrix newBoard_B
 		newBoard_B = [["0,3", "0,4", "0,5"],
-				  ["1,3", "1,4", "1,5"],
-				  ["2,3", "2,4", "2,5"]]
+			      ["1,3", "1,4", "1,5"],
+			      ["2,3", "2,4", "2,5"]]
 
 		# if the user chooses to turn board B right
 		if direction == "right"
@@ -402,8 +398,8 @@ class Pentago
 	def turn_board_C(direction)
 
 		newBoard_C=[["3,0", "3,1", "3,2"],
-					["4,0", "4,1", "4,2"],
-					["5,0", "5,1", "5,2"]]
+			    ["4,0", "4,1", "4,2"],
+		            ["5,0", "5,1", "5,2"]]
 
 		if direction == "right"
 			for r in 0..2
@@ -438,8 +434,8 @@ class Pentago
 	# turn board D either left or right
 	def turn_board_D(direction)
 		newBoard_D = [["","",""],
-					  ["","",""],
-					  ["","",""],]
+			      ["","",""],
+			      ["","",""],]
 
 		if direction == "right"
 			for r in 0..2
