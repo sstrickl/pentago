@@ -2,20 +2,19 @@ class Pentago
 	
 	# initialize the 4 boards as 1 6x6 matrix 
 	def initialize 
-		@board = [ 
-					
-				  ["u", "u", "u", "u", "u", "u"],	# board 1, 2, 3, 4
+		@board = [ ["u", "u", "u", "u", "u", "u"],	# board 1, 2, 3, 4
 				  	
-				  ["u", "u", "u", "u", "u", "u"],
+			   ["u", "u", "u", "u", "u", "u"],
 				  	
-				  ["u", "u", "u", "u", "u", "u"],
+			   ["u", "u", "u", "u", "u", "u"],
 				  	
-				  ["u", "u", "u", "u", "u", "u"],
+			   ["u", "u", "u", "u", "u", "u"],
 
-				  ["u", "u", "u", "u", "u", "u"],
+		           ["u", "u", "u", "u", "u", "u"],
 
-				  ["u", "u", "u", "u", "u", "u"], ]	
+		           ["u", "u", "u", "u", "u", "u"], ]	
 
+		# this is used to keep track of player turn
 		@p_turn = "2"
 	end
 
@@ -29,14 +28,15 @@ class Pentago
 		print "     " 
 		
 		for r in 0..5
-			# if r = 3 provide extra space between the boards #
-			if r == 0
-				puts "       ~A~              ~B~"
-				print"      "
-			end
-			if r == 3
-				print "     "
-			end
+		 # if r = 0 label boards A & B
+		  if r == 0
+		   puts "       ~A~              ~B~"
+		   print"      "
+		  end
+		  # if r = 3 provide extra space between the boards #
+		  if r == 3
+	           print "     "
+		  end
 		# print the column numbers #
 		print "   #{r}"
 		end
