@@ -1,1 +1,37 @@
-add more later
+This is a game of pentago that can be played completely from the terminal. It's a good start,
+but there is way too much repetition so I need to fix that. 
+
+For more information about how to play the game see: http://en.wikipedia.org/wiki/Pentago.
+
+The methods are: 
+
+printBoards - prints the 4 boards 
+
+playerTurn - sets the player turn to 1 or 2
+
+place - set a 'marble' in any coordinate 0,0 - 5,5 marked with u.
+
+*I would like to combine the following methods into 1*
+turn_board_A(direction) - turn board A left or right
+
+turn_board_B(direction) - turn board B left or right
+
+turn_board_C(direction) - turn board C left or right
+
+turn_board_D(direction) - turn board D left or right 
+*****************************************************
+
+*I would also like to combine these methods into 1 or 2*
+winDiag5 - checks to see if there is a win starting in the upper right corner 
+winDiag4 - checks to see if there is a win starting in the upper right corner -1
+winDiag1 - checks to see if there is a win starting in the upper left corner -1
+winDiag0 - checks to see if there is a win starting in the upper left corner 
+
+check to see if there is a win in any rows: 
+winRow0
+winRow1
+
+check to see if there is a win in any columns:
+winCol0
+winCol1
+******************************************************
