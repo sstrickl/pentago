@@ -16,7 +16,7 @@ printBoards - prints the 4 boards
 
 playerTurn - sets the player turn to 1 or 2
 
-place - set a 'marble' in any coordinate 0,0 - 5,5 marked with u.
+place - set a 'marble' in any coordinate 0,0 - 5,5
 
 *I would like to combine the following methods into 1*
 
