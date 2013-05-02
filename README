@@ -1,5 +1,12 @@
-This is a game of pentago that can be played completely from the terminal. It's a good start,
-but there is way too much repetition so I need to fix that. 
+# This is a game of pentago that can be played completely from the terminal.
+# play the game by loading the pentago file then by creating a new instance of
+# Pentago aka game = Pentago.new
+# begin with game.place(1,2) - or whichever coordinates you would like. 
+# you will then be prompted to turn a board, to do so use game.turn_board_A (B, C, or D)
+# player 2 then can place in the same way and so on, until there is a winner.
+# player 1's moves will be indicated with a 1 and 2's with a 2. 
+
+There are still several issues with my code which I would like to straighten out. 
 
 For more information about how to play the game see: http://en.wikipedia.org/wiki/Pentago.
 
@@ -12,26 +19,19 @@ playerTurn - sets the player turn to 1 or 2
 place - set a 'marble' in any coordinate 0,0 - 5,5 marked with u.
 
 *I would like to combine the following methods into 1*
-turn_board_A(direction) - turn board A left or right
 
-turn_board_B(direction) - turn board B left or right
+turn_board_A(direction) - turn board A "left" or "right"
 
-turn_board_C(direction) - turn board C left or right
+turn_board_B(direction) - turn board B "left" or "right"
 
-turn_board_D(direction) - turn board D left or right 
+turn_board_C(direction) - turn board C "left" or "right"
+
+turn_board_D(direction) - turn board D "left" or "right" 
 *****************************************************
 
-*I would also like to combine these methods into 1 or 2*
-winDiag5 - checks to see if there is a win starting in the upper right corner 
-winDiag4 - checks to see if there is a win starting in the upper right corner -1
-winDiag1 - checks to see if there is a win starting in the upper left corner -1
-winDiag0 - checks to see if there is a win starting in the upper left corner 
+win - goes through all the possibilities of a win
 
-check to see if there is a win in any rows: 
-winRow0
-winRow1
+check_win - calls win at the right moments
 
-check to see if there is a win in any columns:
-winCol0
-winCol1
-******************************************************
+
+ 
