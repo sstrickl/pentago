@@ -26,9 +26,9 @@ class Pentago
 		# get the numbers to line up correctly #
 		print "     " 
 		
-		for r in 0..5
+		for c in 0..5
 			# if r = 3 provide extra space between the boards #
-			if r == 0
+			if c == 0
 				puts "       ~A~              ~B~"
 				print"      "
 			end
