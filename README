@@ -22,8 +22,6 @@ playerTurn - sets the player turn to 1 or 2
 
 place - set a 'marble' in any coordinate 0,0 - 5,5
 
-
-
 *I would like to combine the following methods into 1*
 
 turn_board_A(direction) - turn board A "left" or "right"
