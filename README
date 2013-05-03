@@ -6,7 +6,11 @@
 # player 2 then can place in the same way and so on, until there is a winner.
 # player 1's moves will be indicated with a 1 and 2's with a 2. 
 
-There are still several issues with my code which I would like to straighten out. 
+There are still several issues with my code which I will straighten out and refactor. For
+example, in future versions I would like to see testing for a win happen more smoothly.
+
+It's very exciting putting this game together because I was able to utilize a matrix. I love the 
+challenge of writing the game and I hope you enjoy playing it. 
 
 For more information about how to play the game see: http://en.wikipedia.org/wiki/Pentago.
 
@@ -17,6 +21,8 @@ printBoards - prints the 4 boards
 playerTurn - sets the player turn to 1 or 2
 
 place - set a 'marble' in any coordinate 0,0 - 5,5
+
+
 
 *I would like to combine the following methods into 1*
 
