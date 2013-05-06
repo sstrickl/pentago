@@ -179,10 +179,11 @@ class Pentago
 		
 			# if r is 4 or 5 check to see if there is a winner
 			if r == 4 || r == 5
-				# if there are 5 1's in a row 1 is the winner diagonally
+				# if there are 5 1's in a row player 1 is the winner diagonally
 				if /1{5}/.match(winDiagArrayL.join) || /1{5}/.match(winDiagArrayR.join)
 					winner = "Player 1"
 					
+				# if there are 5 2's in a row player 2 is the winner diagonally
 				elsif /2{5}/.match(winDiagArrayL.join) || /2{5}/.match(winDiagArrayR.join)
 					winner = "Player 2"
 				else
