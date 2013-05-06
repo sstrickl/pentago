@@ -16,26 +16,19 @@ For more information about how to play the game see: http://en.wikipedia.org/wik
 
 The methods are: 
 
-printBoards - prints the 4 boards 
+print_board - prints the 4 boards 
 
-playerTurn - sets the player turn to 1 or 2
+get_player_turn - returns which player's turn it is
 
-place - set a 'marble' in any coordinate 0,0 - 5,5
+place_marble - current player places a marble
 
-*I would like to combine the following methods into 1*
+turn_board - turns a board either left or right
 
-turn_board_A(direction) - turn board A "left" or "right"
+turn_board_helper - turns a 3x3 submatrix
 
-turn_board_B(direction) - turn board B "left" or "right"
+win - goes through all the possibilities of a win to return a winner
 
-turn_board_C(direction) - turn board C "left" or "right"
-
-turn_board_D(direction) - turn board D "left" or "right" 
-*****************************************************
-
-win - goes through all the possibilities of a win
-
-check_win - calls win at the right moments
+get_winner - returns draw, none or a winner
 
 
  
