@@ -1,16 +1,14 @@
 # This is a game of pentago that can be played completely from the terminal.
 # play the game by loading the pentago file then by creating a new instance of
 # Pentago aka game = Pentago.new
-# begin with game.place(1,2) - or whichever coordinates you would like. 
-# you will then be prompted to turn a board, to do so use game.turn_board_A (B, C, or D)
-# player 2 then can place in the same way and so on, until there is a winner.
-# player 1's moves will be indicated with a 1 and 2's with a 2. 
+# begin with game.place_marble(1,2) - or whichever coordinates you would like. 
 
 There are still several issues with my code which I will straighten out and refactor. For
-example, in future versions I would like to see testing for a win happen more smoothly.
+example, in future versions I would like to have a game engine. There are also a couple more win
+scenarios.
 
 It's very exciting putting this game together because I was able to utilize a matrix. I love the 
-challenge of writing the game and I hope you enjoy playing it. 
+challenge of writing this and I hope people can someday enjoy playing it. 
 
 For more information about how to play the game see: http://en.wikipedia.org/wiki/Pentago.
 
