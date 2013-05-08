@@ -1,14 +1,10 @@
 # This is a game of pentago that can be played completely from the terminal.
-# play the game by loading the pentago file then by creating a new instance of
-# Pentago aka game = Pentago.new
-# begin with game.place_marble(1,2) - or whichever coordinates you would like. 
 
-There are still several issues with my code which I will straighten out and refactor. For
-example, in future versions I would like to have a game engine. There are also a couple more win
-scenarios.
+There are still a couple of issues with the code which I would like to straighten out. There are a couple
+more win scenarios to take into account. I would also like to make the win function more concise and elegant. 
 
-It's very exciting putting this game together because I was able to utilize a matrix. I love the 
-challenge of writing this and I hope people can someday enjoy playing it. 
+It's very exciting putting this game together because I was able to utilize a matrix and learn about modularity. 
+I love the challenge of writing this and I hope people can someday enjoy playing it. 
 
 For more information about how to play the game see: http://en.wikipedia.org/wiki/Pentago.
 
